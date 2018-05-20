@@ -4,7 +4,7 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>响应式简单个性个人博客模板</title>
+		<title>😂王健的博客</title>
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" type="text/css" href="statics/css/index.css" media="all" />
@@ -12,7 +12,7 @@
 
 	<body class="home blog custom-background round-avatars">
 		<div class="Yarn_Background" style="background-image: url( statics/images/47fb3c_.jpg);"></div>
-		<form class="js-search search-form search-form--modal" method="get" action="search.html" role="search">
+		<!--<form class="js-search search-form search-form--modal" method="get" action="search.html" role="search">
 			<div class="search-form__inner">
 				<div>
 					<div id="search-container" class="ajax_search">
@@ -25,7 +25,7 @@
 					</div>
 				</div>
 			</div>
-		</form>
+		</form>-->
 		<div class="navi" data-aos="fade-down">
 			<div class="bt-nav">
 				<div class="line line1"></div>
@@ -41,32 +41,15 @@
 									<li id="menu-item-17" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-17">
 										<a href="index.html">首页</a>
 									</li>
-									<li id="menu-item-173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-173">
-										<a href="update.html">更新</a>
-									</li>
-									<li id="menu-item-78" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-78">
-										<a href="link.html">链接</a>
-									</li>
 									<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-252">
+										<a href="time.html">时间线</a>
+										<li id="menu-item-252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-252">
 										<a href="archives.html">归档</a>
-										<ul class="sub-menu">
-											<li id="menu-item-165" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-165">
-												<a href="">theme</a>
-											</li>
-											<li id="menu-item-163" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-163">
-												<a href="">Happen</a>
-											</li>
-											<li id="menu-item-924" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-924">
-												<a href="">WeWork</a>
-											</li>
-											<li id="menu-item-164" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-164">
-												<a href="">WordPress</a>
-											</li>
-										</ul>
 									</li>
-									<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57">
+									</li>
+									<!--<li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-57">
 										<a href="gustbook.html">留言</a>
-									</li>
+									</li>-->
 								</ul>
 							</div>
 						</div>
@@ -75,17 +58,17 @@
 				</div>
 			</div>
 		</div>
-		<div class="hebin" data-aos="fade-down">
+		<!--<div class="hebin" data-aos="fade-down">
 			<i class=" js-toggle-search iconfont">&#xe60e;</i>
-		</div>
+		</div>-->
 		<header id="masthead" class="overlay animated from-bottom" itemprop="brand">
 			<div class="site-branding text-center">
 				<a href="">
 					<figure>
-						<img class="custom-logo avatar" src="statics/images/omikron.png" />
+						<img class="custom-logo avatar" src="statics/images/IMG_0392.JPG" />
 					</figure>
 				</a>
-				<h3 class="blog-description"><p>This is beauty</p></h3>
+				<h3 class="blog-description"><p> W E L C O M E</p></h3>
 			</div>
 			<!-- .site-branding -->
 			<div class="decor-part">
@@ -107,136 +90,79 @@
 			</div>
 		</header>
 		<div id="main" class="content">
-
 			<div class="container">
-
-				<h1 class="page-title">以&ldquo;交代&rdquo;为关键字</h1>
-
-				<p class="Searchmeta">共计 1 篇文章</p>
-
-				<div class="location">当前位置：
-					<a href="">首页</a> &raquo; 搜索结果 &raquo; 交代
-				</div>
-
-				<div class="posts-list js-posts">
-
-					<div class="archive-post">
-
-						<div class="type">
-							<div class="mask"><i class="iconfont">&#xe603;</i></div>
+				<article id="post-1202" class="js-gallery post-1202 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-11 tag-22 tag-29">
+					<style>
+						.container {
+							padding: 10px 0px;
+						}
+						
+						.post {
+							margin: 0 auto
+						}
+					</style>
+					<section class="post_content">
+						<header class="post_header">
+							
+							<h1 class="post_title">解决push源码出错</h1>
+						</header>
+						<div class="post-body js-gallery">
+							<P>在使用git 对源代码进行push到gitHub时可能会出错，信息如下:</P>
+								<img src="statics/images/20151231111548636.png" />
+							<p>此时很多人会尝试下面的命令把当前分支代码上传到master分支上。 </p>
+							<P>$ git push -u origin master</P>
+							<P>但依然没能解决问题</P>
+							<img src="statics/images/20151231112223880.png" />
+      						<p>出现错误的主要原因是oschina中的README.md文件不在本地代码目录中</p>
+      						<img src="statics/images/20151231113254190.png" />
+      						<p>可以通过如下命令进行代码合并【注：pull=fetch+merge] </p>
+      						<p>git pull --rebase origin master</p>
+      						<img src="statics/images/20151231113626290.png" />
+      						<p>执行上面代码后可以看到本地代码库中多了README.md文件</p>
+      						<img src="statics/images/20151231114744301.png" />
+      						<p>二、把源码上传到github仓库</p>
+      						<p>1、clone到本地 </p>
+      						<p>（1）选择一个目录输入下面的指令 </p>
+      						<p>git clone https://github.com/Wangyj1108/Wangyj1108.github.io.git</p>
+      						<img src="statics/images/20160518152542826.png" />
+      						<p>此时再执行语句 git push -u origin master即可完成代码上传到oschina</p>
+      						<img src="statics/images/20151231114953370.png"/>
+      						<p>[注]还有可能是push源码时本地资源被占用中，关闭编辑器，解除占用，可能会成功。</p>
+      						
 						</div>
-
-						<h2 class="archive-title" style="color: #">
-
-					<span>
-					
-					<a href="">交代是不可能交代的</a>
-					
-					</span>
-					
-					<div class="post-time">2018/03/20</div>
-
-				</h2>
-
-						<div class="post-category">
-							<a href="" rel="category tag">Happen</a>
-						</div>
-
-					</div>
-
-				</div>
-				<div class="posts-list js-posts">
-
-					<div class="archive-post">
-
-						<div class="type">
-							<div class="mask"><i class="iconfont">&#xe603;</i></div>
-						</div>
-
-						<h2 class="archive-title" style="color: #">
-
-					<span>
-					
-					<a href="">交代是不可能交代的</a>
-					
-					</span>
-					
-					<div class="post-time">2018/03/20</div>
-
-				</h2>
-
-						<div class="post-category">
-							<a href="" rel="category tag">Happen</a>
-						</div>
-
-					</div>
-
-				</div>
-				<div class="posts-list js-posts">
-
-					<div class="archive-post">
-
-						<div class="type">
-							<div class="mask"><i class="iconfont">&#xe603;</i></div>
-						</div>
-
-						<h2 class="archive-title" style="color: #">
-
-					<span>
-					
-					<a href="">交代是不可能交代的</a>
-					
-					</span>
-					
-					<div class="post-time">2018/03/20</div>
-
-				</h2>
-
-						<div class="post-category">
-							<a href="" rel="category tag">Happen</a>
-						</div>
-
-					</div>
-
-				</div>
-				<div class="posts-list js-posts">
-
-					<div class="archive-post">
-
-						<div class="type">
-							<div class="mask"><i class="iconfont">&#xe603;</i></div>
-						</div>
-
-						<h2 class="archive-title" style="color: #">
-
-					<span>
-					
-					<a href="">交代是不可能交代的</a>
-					
-					</span>
-					
-					<div class="post-time">2018/03/20</div>
-
-				</h2>
-
-						<div class="post-category">
-							<a href="" rel="category tag">Happen</a>
-						</div>
-
-					</div>
-
-				</div>
-				<div class="mt+">
-					<div class="pagination js-pagination">
-
-						<div class="js-next pagination__load"></div>
-
-					</div>
-				</div>
-
+					</section>
+				</article>
+			</div>
+			<svg id="upTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+				<path d="M0 0 L50 100 L100 0 Z"></path>
+			</svg>
+			<div id="social">
+				<ul>
+					<li>
+						<a href="" title="qzone" target="_blank"><i class="iconfont">&#xe67f;</i></a>
+					</li>
+					<li>
+						<a href="" title="weibo" target="_blank"><i class="iconfont">&#xe680;</i></a>
+					</li>
+					<li>
+						<a href="" title="douban" target="_blank"><i class="iconfont">&#xe681;</i></a>
+					</li>
+					<li>
+						<a href="" title="twitter" target="_blank"><i class="iconfont">&#xe683;</i></a>
+					</li>
+				</ul>
+			</div>
+			
+			<svg id="dwTriangleColor" width="100%" height="40" viewBox="0 0 100 102" preserveAspectRatio="none">
+				<path d="M0 0 L50 100 L100 0 Z"></path>
+			</svg>
+			<div class="wrapper">
 			</div>
 		</div>
 
+		<div class="p-header">
+			<figure class="p-image" style="background-image: url(statics/images/47fb3c_9afed6c259f94589881bd55376206366mv2_d_3840_5784_s_4_2.jpg);"></figure>
+		</div>
 		<footer id="footer" class="overlay animated from-top">
 			<div class="decor-wrapper">
 				<svg id="footer-decor" class="decor top" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -252,25 +178,39 @@
 			</div>
 			<div class="socialize" data-aos="zoom-in">
 				<li>
-					<a title="weibo" class="socialicon" href=""><i class="iconfont" aria-hidden="true">&#xe601;</i></a>
+					<a title="weibo" class="socialicon" href=""><i class="iconfont" aria-hidden="true">&#xe601;
+			</i></a>
 				</li>
 				<li class="wechat">
-					<a class="socialicon"><i class="iconfont">&#xe609;</i></a>
+					<a class="socialicon"><i class="iconfont">&#xe609;
+			</i></a>
 					<div class="wechatimg"><img src="statics/images/49D3746D-7519-B709-83E4-65BD1927C4E7.jpg"></div>
 				</li>
 				<li>
-					<a title="QQ" class="socialicon" href="" target="_blank"><i class="iconfont" aria-hidden="true">&#xe616;</i></a>
+					<a title="QQ" class="socialicon" href="" target="_blank"><i class="iconfont" aria-hidden="true">&#xe616;
+			</i></a>
 				</li>
 			</div>
-			<div class="cr">
-				Copyright&copy;2018. Design by
+			<div class="cr">Copyright&copy; 2018. Design by
 				<a href="">17sucai</a>
 			</div>
+			<script type="text/javascript">
+				window.onscroll = function() {
+					var scrollTop = document.body.scrollTop;
+					if(scrollTop >= 200) {
+						document.getElementById("NextPrevPosts").style.display = "none"
+					} else {
+						document.getElementById("NextPrevPosts").style.display = "block"
+					}
+				}
+			</script>
 			<script type='text/javascript' src='statics/js/jquery.min.js'></script>
 			<script type='text/javascript' src='statics/js/plugins.js'></script>
 			<script type='text/javascript' src='statics/js/script.js'></script>
 			<script type='text/javascript' src='statics/js/particles.js'></script>
 			<script type='text/javascript' src='statics/js/aos.js'></script>
+			<script type='text/javascript' src='statics/js/prism.js'></script>
+			<script type='text/javascript' src='statics/js/gravatar.js'></script>
 
 	</body>
 
