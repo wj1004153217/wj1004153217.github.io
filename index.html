@@ -8,9 +8,32 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" type="text/css" href="statics/css/index.css" media="all" />
+		<script language="javascript" type="text/javascript">  
+		function leftTimer(year,month,day,hour,minute,second){ 
+  		var leftTime = (new Date(year,month-1,day,hour,minute,second)) - (new Date()); //计算剩余的毫秒数 
+  		var days = parseInt(leftTime / 1000 / 60 / 60 / 24 , 10); //计算剩余的天数 
+  		var hours = parseInt(leftTime / 1000 / 60 / 60 % 24 , 10); //计算剩余的小时 
+  		var minutes = parseInt(leftTime / 1000 / 60 % 60, 10);//计算剩余的分钟 
+  		var seconds = parseInt(leftTime / 1000 % 60, 10);//计算剩余的秒数 
+  		days = checkTime(days); 
+ 		 hours = checkTime(hours); 
+  		minutes = checkTime(minutes); 
+ 		 seconds = checkTime(seconds); 
+  		setInterval("leftTimer(2018,12,23,8,30,00)",1000); 
+  		document.getElementById("timer").innerHTML = days+ " 天 " + hours+ " 小时 " + minutes+ " 分 " +seconds+ " 秒 ";  
+} 
+function checkTime(i){ //将0-9的数字前面加上0，例1变为01 
+  if(i<10) 
+  { 
+    i = "0" + i; 
+  } 
+  return i; 
+} 
+  
+</script>
 	</head>
 
-	<body class="home blog custom-background round-avatars">
+	<body class="home blog custom-background round-avatars"  onload="leftTimer()">
 		<div class="Yarn_Background" style="background-image: url( statics/images/47fb3c_.jpg);"></div>
 		<!--<form class="js-search search-form search-form--modal" method="get" action="search.html" role="search">
 			<div class="search-form__inner">
@@ -95,6 +118,18 @@
 				<article itemscope="itemscope">
 					<div class="posts-list js-posts">
 
+						<div class="post post-layout-list" data-aos="fade-up">
+							<div class="postnormal review ">
+					
+								<div class="post-container">
+									<div class="status_btn">【倒计时】距离研究生考试还有<br><br><center> <div id="timer"></div> </center></div>
+									
+
+									<p class="section_p"></p>
+									
+								</div>
+							</div>
+						</div>
 
 						<div class="post post-layout-list" data-aos="fade-up">
 							<div class="postnormal review ">
