@@ -4,7 +4,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>😂王健的个人博客</title>
+		<link rel="icon" href="statics/images/favicon.ico" type="image/x-icon"/>
+		<title>王健的个人博客</title>
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" type="text/css" href="statics/css/index.css" media="all" />
@@ -20,15 +21,14 @@
   		minutes = checkTime(minutes); 
  		 seconds = checkTime(seconds); 
   		setInterval("leftTimer(2018,12,23,8,30,00)",1000); 
-  		document.getElementById("timer").innerHTML = days+ " 天 " + hours+ " 小时 " + minutes+ " 分 " +seconds+ " 秒 ";  
-} 
-function checkTime(i){ //将0-9的数字前面加上0，例1变为01 
-  if(i<10) 
-  { 
-    i = "0" + i; 
-  } 
-  return i; 
-} 
+  		document.getElementById("timer").innerHTML = days+ " 天 " + hours+ " 小时 " + minutes+ " 分 " +seconds+ " 秒 ";  } 
+  		function checkTime(i){ //将0-9的数字前面加上0，例1变为01 
+  			if(i<10) 
+  			{ 
+  				i = "0" + i; 
+  			} 
+  			return i;
+  		} 
   
 </script>
 	</head>
